@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+
+    <item android:title="Home"
+        android:id="@+id/home"
+        android:icon="@mipmap/ic_launcher"
+        />
+
+    <item android:title="Map"
+        android:id="@+id/drawer_map"
+        />
+
+    <!--<item android:title="Add route"-->
+        <!--android:id="@+id/add_route"-->
+        <!--/>-->
+    <!---->
+    <!--<item android:title="Sliding tab"-->
+        <!--android:id="@+id/sliding_tab"-->
+        <!--/>-->
+</menu>

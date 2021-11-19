@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!--<EditText-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:id="@+id/search_txt"/>-->
+
+    <!--<Button-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_below="@+id/search_txt"-->
+            <!--android:text="search"-->
+            <!--android:id="@+id/search_b"-->
+            <!--/>-->
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/satelite"
+        android:text="Satellite"/>
+    <!--<Button-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_toRightOf="@+id/satelite"-->
+    <!--android:id="@+id/terrain"-->
+    <!--android:text="Terrain"-->
+    <!--/>-->
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/satelite"
+        android:id="@+id/normal"
+        android:text="Normal"
+        />
+    <Spinner
+        android:id="@+id/drop_stops"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/normal"
+        android:spinnerMode="dropdown"
+        />
+
+    <!--<Button-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_toRightOf="@+id/normal"-->
+    <!--android:text="Hybrid"-->
+    <!--android:id="@+id/hybrid"-->
+    <!--/>-->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/message"
+        android:layout_toRightOf="@id/drop_stops"
+        android:textSize="20dp"
+        />
+
+
+    <fragment
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/drop_stops"
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        >
+
+    </fragment>
+
+</RelativeLayout>

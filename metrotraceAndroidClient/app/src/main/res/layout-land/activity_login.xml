@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Relative layout Demo"
+        android:textSize="22dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/demo"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" Username"
+        android:textSize="18dp"
+        android:id="@+id/username"
+        android:layout_below="@+id/demo"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="type your username"
+        android:textSize="16dp"
+        android:id="@+id/etusername"
+        android:layout_below="@+id/demo"
+        android:layout_toRightOf="@+id/username"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" Password"
+        android:textSize="18dp"
+        android:id="@+id/password"
+        android:layout_below="@+id/etusername"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint=" type your password"
+        android:textSize="16dp"
+        android:id="@+id/etpassword"
+        android:layout_below="@+id/etusername"
+        android:layout_toRightOf="@id/password"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:id="@+id/login"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/etpassword"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Signup"
+        android:id="@+id/signup"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/etpassword"
+        android:layout_toRightOf="@+id/login"
+        />
+</RelativeLayout>
