@@ -6,6 +6,7 @@ import com.bks.metrotraceServer.service.TransportService;
 import org.springframework.web.bind.annotation.*;
 
 import javax.annotation.Resource;
+import java.util.List;
 
 @RestController
 @RequestMapping("/transport")
@@ -15,9 +16,9 @@ public class TransportController {
     private TransportService transportService;
 
     @GetMapping("/all")
-    public String getTransport(){
+    public List<Transport> getTransport(){
 
-        return "all transports are returned";
+        return transportService.getAllTransports();
     }
 
     @PostMapping("/save")
