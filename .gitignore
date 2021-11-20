@@ -12,7 +12,7 @@ target/
 .settings
 .springBeans
 .sts4-cache
-*.properties
+application.*
 
 ### IntelliJ IDEA ###
 .idea
@@ -32,3 +32,16 @@ build/
 
 ### VS Code ###
 .vscode/
+
+### Addroid Studio###
+*.iml
+.gradle
+/local.properties
+/.idea/workspace.xml
+/.idea/libraries
+.DS_Store
+/build
+/captures
+.externalNativeBuild
+
+

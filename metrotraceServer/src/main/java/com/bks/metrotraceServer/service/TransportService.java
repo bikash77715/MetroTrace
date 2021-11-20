@@ -11,10 +11,10 @@ public class TransportService {
     @Autowired
     private TransportRepository transportRepository;
 
-    public boolean saveTransport(Transport transport) {
+    public String saveTransport(Transport transport) {
 
         if(transportRepository.save(transport) instanceof Transport)
-            return true;
-        return false;
+            return "1 transport saved successfully";
+        return "Transport save unsuccessful";
     }
 }
